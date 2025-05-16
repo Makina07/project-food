@@ -3,6 +3,7 @@ import { ScrollView, View } from "react-native";
 import { Banner } from "../components/banner";
 import { Header } from "../components/header";
 import { Search } from "../components/search";
+import { Section } from "../components/section";
 const statusbarHeight = Constants.statusBarHeight;
 export default function Index() {
   return (
@@ -19,6 +20,22 @@ export default function Index() {
         <Banner />
         <Search />
       </View>
+      <Section
+        name="Comidas em alta"
+        label="veja mais"
+        action={() => {
+          console.log("CLICOU NO BOTAO VEJA MAIS1");
+        }}
+        size="text-2xl"
+      />
+      <Section
+        name="Famosos no devFood"
+        label="veja mais"
+        action={() => {
+          console.log("CLICOU NO BOTAO VEJA MAIS 2");
+        }}
+        size="text-2xl"
+      />
     </ScrollView>
   );
 }
