@@ -2,6 +2,7 @@ import Constants from "expo-constants";
 import { ScrollView, View } from "react-native";
 import { Banner } from "../components/banner";
 import { Header } from "../components/header";
+import { Restaurants } from "../components/restaurants";
 import { Search } from "../components/search";
 import { Section } from "../components/section";
 import { TrendingFoods } from "../components/trending";
@@ -30,6 +31,15 @@ export default function Index() {
         size="text-2xl"
       />
       <TrendingFoods />
+      <Section
+        name="Famosos no DevFood"
+        label="veja mais"
+        action={() => {
+          console.log("CLICOU NO BOTAO VEJA MAIS1");
+        }}
+        size="text-xl"
+      />
+      <Restaurants />
     </ScrollView>
   );
 }
