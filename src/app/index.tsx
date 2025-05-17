@@ -2,6 +2,7 @@ import Constants from "expo-constants";
 import { ScrollView, View } from "react-native";
 import { Banner } from "../components/banner";
 import { Header } from "../components/header";
+import { RestaurantsVerticalList } from "../components/list";
 import { Restaurants } from "../components/restaurants";
 import { Search } from "../components/search";
 import { Section } from "../components/section";
@@ -40,6 +41,15 @@ export default function Index() {
         size="text-xl"
       />
       <Restaurants />
+      <Section
+        name="Restaurantes"
+        label="veja mais"
+        action={() => {
+          console.log("CLICOU NO BOTAO VEJA MAIS1");
+        }}
+        size="text-xl"
+      />
+      <RestaurantsVerticalList />
     </ScrollView>
   );
 }
